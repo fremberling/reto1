@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idquestion: 1
+  descripcion: MyString
+  fecha: 2016-01-24
+  usuarios: 1
+
+two:
+  idquestion: 1
+  descripcion: MyString
+  fecha: 2016-01-24
+  usuarios: 1

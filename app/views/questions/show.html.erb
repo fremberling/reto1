@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nro Question:</strong>
+  <%= @question.id%>
+</p>
+
+<p>
+	<hr />
+	<%= simple_format @question.descripcion %>
+	<hr />
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @question.created_at %>
+</p>
+
+<p>
+  <strong>Usuarios:</strong>
+   <% @usuarios.each do |usuario| %>
+       <%= simple_format usuario.usuario %>
+ 	<% end %>
+</p>
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>

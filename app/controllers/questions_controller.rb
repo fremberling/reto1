@@ -5,7 +5,6 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   def index
     @questions = Question.all
-    @usuarios = Usuario.select("id, usuario").where(:id => params[:id]);
   end
 
   # GET /questions/1
@@ -13,8 +12,6 @@ class QuestionsController < ApplicationController
   def show
     @question = Question.find(params[:id]);
     @usuarios = Usuario.select("id, usuario").where(:id => params[:id]);
-    puts "uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuusuarios"
-    puts @usuarios
   end
 
   # GET /questions/new
